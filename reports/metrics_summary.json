@@ -1,0 +1,61 @@
+{
+  "dataset": {
+    "source": "UCI Machine Learning Repository (Dataset ID 350 / OpenML 42477)",
+    "name": "Default of Credit Card Clients",
+    "total_records": 30000,
+    "test_records": 6000
+  },
+  "metrics": {
+    "roc_auc": 0.78209,
+    "gini_coefficient": 0.56418,
+    "ks_statistic": 0.43292,
+    "pr_auc": 0.56385,
+    "brier_score": 0.13408,
+    "f1_score": 0.50695,
+    "precision": 0.38492,
+    "recall": 0.74228,
+    "optimal_threshold": 0.17,
+    "expected_cost_per_applicant": 0.54733,
+    "confusion_matrix": {
+      "true_negatives": 3099,
+      "false_positives": 1574,
+      "false_negatives": 342,
+      "true_positives": 985
+    }
+  },
+  "top_shap_features": {
+    "max_delinquency_months": 0.40709,
+    "pay_0": 0.24439,
+    "limit_bal": 0.10298,
+    "bill_amt1": 0.09181,
+    "bill_growth_6m": 0.08551,
+    "utilization_ratio_m1": 0.0817,
+    "total_pay_6m": 0.07669,
+    "pay_amt2": 0.07649,
+    "severe_delinquency_count": 0.07643,
+    "pay_amt1": 0.06765,
+    "months_past_due_count": 0.0671,
+    "pay_amt3": 0.06386,
+    "avg_utilization_6m": 0.06329,
+    "max_utilization_6m": 0.06261,
+    "payment_to_bill_ratio_6m": 0.05854
+  },
+  "hyperparameters": {
+    "objective": "binary",
+    "metric": "auc",
+    "boosting_type": "gbdt",
+    "subsample_freq": 1,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1,
+    "n_estimators": 326,
+    "learning_rate": 0.029848461576675187,
+    "num_leaves": 21,
+    "max_depth": 5,
+    "min_child_samples": 62,
+    "subsample": 0.8918424713352255,
+    "colsample_bytree": 0.8550229885420852,
+    "reg_alpha": 3.53875886477924,
+    "reg_lambda": 0.0774211647399625
+  }
+}
